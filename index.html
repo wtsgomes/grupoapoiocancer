@@ -1,286 +1,242 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Onconutri - Grupo de Apoio e Nutrição</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Onconutri - Grupo de Apoio e Nutrição</title>
 
-    <!-- Facebook Pixel Code -->
-    <script>
-        !function(f,b,e,v,n,t,s)
-        {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-        n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-        if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-        n.queue=[];t=b.createElement(e);t.async=!0;
-        t.src=v;s=b.getElementsByTagName(e)[0];
-        s.parentNode.insertBefore(t,s)}(window, document,'script',
-        'https://connect.facebook.net/en_US/fbevents.js');
-        fbq('init', '4180183745554136');
-        fbq('track', 'PageView');
+<!-- Facebook Pixel -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init','4180183745554136');
+fbq('track','PageView');
 
-        function rastrearClique() {
-            fbq('track', 'Lead', {content_name: 'Entrar no Grupo Onconutri'});
-            setTimeout(function() {
-                alert('🎉 Bem-vindo ao Grupo de Apoio Onconutri!\n\nVocê será redirecionado para o WhatsApp agora.');
-            }, 100);
-        }
-    </script>
+function rastrearClique(){
+fbq('track','Lead',{content_name:'Entrar Grupo Onconutri'});
+}
+</script>
 
-    <noscript>
-        <img height="1" width="1" style="display:none"
-        src="https://www.facebook.com/tr?id=4180183745554136&ev=PageView&noscript=1" />
-    </noscript>
-    <!-- End Facebook Pixel Code -->
+<noscript>
+<img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=4180183745554136&ev=PageView&noscript=1"/>
+</noscript>
 
-    <style>
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            margin: 0;
-            padding: 0;
-            background: linear-gradient(135deg, #1a472a 0%, #2d6a4f 50%, #40916c 100%);
-            color: #333;
-            line-height: 1.6;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-            box-sizing: border-box;
-        }
+<style>
+body{
+font-family:'Segoe UI',Tahoma,Verdana,sans-serif;
+margin:0;
+padding:0;
+background:linear-gradient(135deg,#1a472a,#40916c);
+display:flex;
+justify-content:center;
+align-items:center;
+min-height:100vh;
+}
 
-        .container {
-            background: #ffffff;
-            border-radius: 16px;
-            box-shadow: 0 15px 40px rgba(0,0,0,0.25);
-            padding: 40px 30px;
-            margin: 20px;
-            max-width: 700px;
-            width: 100%;
-            text-align: center;
-            animation: fadeIn 1s ease-out;
-        }
+.container{
+background:#fff;
+border-radius:16px;
+padding:28px 22px;
+max-width:700px;
+width:100%;
+margin:16px;
+text-align:center;
+box-shadow:0 15px 40px rgba(0,0,0,.25);
+}
 
-        @keyframes fadeIn {
-            from {opacity:0; transform:translateY(-20px);}
-            to {opacity:1; transform:translateY(0);}
-        }
+.logo{
+width:110px;
+height:110px;
+border-radius:50%;
+margin:0 auto 12px;
+display:block;
+}
 
-        .logo {
-            width: 140px;
-            height: 140px;
-            margin: 0 auto 25px;
-            border-radius: 50%;
-            object-fit: cover;
-            display: block;
-            box-shadow: 0 8px 20px rgba(0,0,0,0.25);
-        }
+h1{
+font-size:2.2em;
+color:#2d6a4f;
+margin:0;
+}
 
-        header h1 {
-            font-size: 2.8em;
-            color: #2d6a4f;
-            margin: 0 0 10px 0;
-            font-weight: 700;
-        }
+.tagline{
+font-size:.95em;
+color:#666;
+margin:6px 0 16px;
+}
 
-        header .tagline {
-            font-size: 1.1em;
-            color: #666;
-            margin-bottom: 30px;
-        }
+.hero h2{
+font-size:1.4em;
+color:#2d6a4f;
+margin-bottom:14px;
+line-height:1.3;
+}
 
-        /* HERO */
-        .hero h2 {
-            font-size: 2em;
-            color: #2d6a4f;
-            margin-bottom: 15px;
-        }
+.cta-button{
+display:block;
+background:linear-gradient(135deg,#25D366,#1da75d);
+color:#fff;
+padding:16px;
+font-size:1.25em;
+font-weight:bold;
+border-radius:50px;
+text-decoration:none;
+box-shadow:0 8px 20px rgba(37,211,102,.4);
+margin:10px auto 14px;
+}
 
-        .hero p {
-            font-size: 1.1em;
-            color: #666;
-            margin-bottom: 25px;
-        }
+.proof-social{
+font-size:.9em;
+color:#666;
+margin-bottom:20px;
+}
 
-        .cta-button {
-            display: inline-block;
-            background: linear-gradient(135deg, #25D366 0%, #1da75d 100%);
-            color: #fff;
-            padding: 18px 50px;
-            font-size: 1.4em;
-            font-weight: bold;
-            border-radius: 50px;
-            text-decoration: none;
-            box-shadow: 0 8px 20px rgba(37,211,102,0.4);
-            margin-bottom: 20px;
-        }
+.hero p{
+font-size:1em;
+color:#666;
+margin-top:18px;
+}
 
-        .cta-button:hover {
-            background: linear-gradient(135deg, #1da75d 0%, #0f7c47 100%);
-        }
+.benefits{
+background:#f0f8f0;
+border-left:5px solid #40916c;
+border-radius:12px;
+padding:22px 18px;
+text-align:left;
+margin-bottom:30px;
+}
 
-        .proof-social {
-            font-size: 1em;
-            color: #666;
-            margin-bottom: 40px;
-        }
+.benefits h3{
+text-align:center;
+color:#2d6a4f;
+margin-bottom:16px;
+}
 
-        .proof-social .member-count {
-            color: #2d6a4f;
-            font-weight: bold;
-        }
+.benefits ul{
+list-style:none;
+padding:0;
+margin:0;
+}
 
-        /* BENEFÍCIOS */
-        .benefits {
-            background: #f0f8f0;
-            padding: 30px 20px;
-            border-radius: 12px;
-            margin-bottom: 40px;
-            text-align: left;
-            border-left: 5px solid #40916c;
-        }
+.benefits li{
+background:#fff;
+margin-bottom:10px;
+padding:12px 14px;
+border-radius:8px;
+font-size:.95em;
+border-left:4px solid #40916c;
+}
 
-        .benefits h3 {
-            text-align: center;
-            font-size: 1.6em;
-            color: #2d6a4f;
-            margin-bottom: 20px;
-        }
+.benefits li::before{
+content:"✓ ";
+color:#40916c;
+font-weight:bold;
+}
 
-        .benefits ul {
-            padding: 0;
-            list-style: none;
-        }
+.why-now{
+border:2px solid #40916c;
+border-radius:12px;
+padding:20px;
+margin-bottom:30px;
+text-align:left;
+}
 
-        .benefits ul li {
-            background: #fff;
-            padding: 15px 20px;
-            margin-bottom: 12px;
-            border-radius: 8px;
-            border-left: 4px solid #40916c;
-            font-size: 1.05em;
-            color: #444;
-            display: flex;
-        }
+.why-now h3{
+text-align:center;
+color:#2d6a4f;
+margin-bottom:10px;
+}
 
-        .benefits ul li::before {
-            content: "✓";
-            color: #40916c;
-            margin-right: 10px;
-            font-weight: bold;
-            font-size: 1.2em;
-        }
+.specialist-box{
+margin-top:10px;
+}
 
-        /* POR QUE ENTRAR AGORA */
-        .why-now {
-            background: #f9f9f9;
-            border: 2px solid #40916c;
-            border-radius: 12px;
-            padding: 25px;
-            margin-bottom: 40px;
-            text-align: left;
-        }
+.specialist-button{
+display:inline-flex;
+align-items:center;
+background:#1976d2;
+color:#fff;
+padding:10px 22px;
+border-radius:40px;
+font-size:.95em;
+font-weight:600;
+text-decoration:none;
+}
 
-        .why-now h3 {
-            text-align: center;
-            font-size: 1.6em;
-            color: #2d6a4f;
-            margin-bottom: 15px;
-        }
+.specialist-button span{
+margin-left:6px;
+}
 
-        .why-now p {
-            font-size: 1.05em;
-            color: #555;
-            line-height: 1.7;
-        }
+footer{
+font-size:.85em;
+color:#999;
+margin-top:25px;
+border-top:1px solid #eee;
+padding-top:12px;
+}
 
-        /* BOTÃO ESPECIALISTA */
-        .specialist-box {
-            margin-top: 35px;
-        }
-
-        .specialist-button {
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            background: #1976d2;
-            color: #fff;
-            padding: 12px 28px;
-            border-radius: 40px;
-            font-size: 1em;
-            font-weight: 600;
-            text-decoration: none;
-            box-shadow: 0 5px 14px rgba(25,118,210,0.35);
-        }
-
-        .specialist-button span {
-            margin-left: 8px;
-        }
-
-        /* RODAPÉ */
-        footer {
-            margin-top: 40px;
-            font-size: 0.9em;
-            color: #999;
-            padding-top: 15px;
-            border-top: 1px solid #eee;
-        }
-
-        @media (max-width: 600px) {
-            .logo { width: 120px; height: 120px; }
-            .cta-button { padding: 15px 35px; font-size: 1.2em; }
-            .specialist-button { padding: 10px 22px; font-size: 0.95em; }
-        }
-    </style>
+@media(max-width:600px){
+h1{font-size:2em;}
+.hero h2{font-size:1.25em;}
+}
+</style>
 </head>
 
 <body>
-    <div class="container">
+<div class="container">
 
-        <header>
-            <img src="Onconutri03.png" class="logo" alt="Logo Onconutri">
-            <h1>Onconutri</h1>
-            <p class="tagline">Apoio, nutrição e clareza para toda a jornada do tratamento.</p>
-        </header>
+<header>
+<img src="Onconutri03.png" class="logo" alt="Logo Onconutri">
+<h1>Onconutri</h1>
+<p class="tagline">Apoio, nutrição e clareza para toda a jornada.</p>
+</header>
 
-        <section class="hero">
-            <h2>A Comunidade que está ajudando a Érica — e agora pode ajudar você também.</h2>
-            <p>Receba orientações claras, seguras e validadas por especialistas para tornar sua jornada mais leve e organizada.</p>
+<section class="hero">
+<h2>A comunidade que está ajudando a Érica — e agora pode ajudar você.</h2>
 
-            <a href="https://chat.whatsapp.com/HbGch6Nj0D72xLrAJaPhYE" 
-               class="cta-button" onclick="rastrearClique(); return true;">
-               ✓ ENTRAR NO GRUPO AGORA
-            </a>
+<a href="https://chat.whatsapp.com/HbGch6Nj0D72xLrAJaPhYE"
+class="cta-button" onclick="rastrearClique()">
+✓ ENTRAR NO GRUPO AGORA
+</a>
 
-            <p class="proof-social">Mais de <span class="member-count">1.200 pessoas</span> já participam diariamente.</p>
-        </section>
+<p class="proof-social">Mais de <strong>1.200 pessoas</strong> já participam.</p>
 
-        <section class="benefits">
-            <h3>Dentro do grupo você vai encontrar:</h3>
-            <ul>
-                <li>Orientações alimentares específicas para cada fase do tratamento.</li>
-                <li>Ajuda para interpretar hemograma e outros exames.</li>
-                <li>Dicas práticas para melhorar qualidade de vida e bem-estar.</li>
-                <li>Acesso a materiais, áudios e aulas exclusivas.</li>
-                <li>Informações diretas, seguras e sem confusão.</li>
-            </ul>
-        </section>
+<p>Receba orientações claras, seguras e validadas por especialistas para tornar sua jornada mais leve e organizada.</p>
+</section>
 
-        <section class="why-now">
-            <h3>Por que entrar agora?</h3>
-            <p>Porque a informação certa, no momento certo, muda completamente a jornada do tratamento.</p>
-            <p>E porque você terá acesso direto ao mesmo protocolo de nutrição e bem-estar que ajudou a Érica.</p>
-            <p>Não enfrente isso sozinho(a). Entre agora para receber orientação real, acolhimento e clareza.</p>
-        </section>
+<section class="benefits">
+<h3>Dentro do grupo você encontra:</h3>
+<ul>
+<li>Orientações alimentares por fase do tratamento</li>
+<li>Ajuda para entender exames e resultados</li>
+<li>Dicas práticas de bem-estar</li>
+<li>Materiais e aulas exclusivas</li>
+<li>Informação clara e confiável</li>
+</ul>
+</section>
 
-        <div class="specialist-box">
-            <a class="specialist-button" href="https://wa.me/5565992086116">
-                💬 <span>Falar com o especialista</span>
-            </a>
-        </div>
+<section class="why-now">
+<h3>Por que entrar agora?</h3>
+<p>A informação certa, no momento certo, muda completamente a jornada do tratamento.</p>
+<p>Você terá acesso ao mesmo protocolo que ajudou a Érica.</p>
+</section>
 
-        <footer>
-            <p>&copy; 2024 Onconutri. Todos os direitos reservados.</p>
-        </footer>
+<div class="specialist-box">
+<a class="specialist-button" href="https://wa.me/5565992086116">
+💬 <span>Falar com o especialista</span>
+</a>
+</div>
 
-    </div>
+<footer>
+<p>&copy; 2024 Onconutri. Todos os direitos reservados.</p>
+</footer>
+
+</div>
 </body>
 </html>
